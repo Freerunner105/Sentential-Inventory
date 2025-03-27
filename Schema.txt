@@ -1,0 +1,22 @@
+/                      # Root directory
+├── pages/             # Pages directory for routing
+│   ├── _app.js        # Entry point for the app, wraps pages with layout and theme
+│   ├── login.js       # Login page
+│   ├── inmates.js     # Inmate dashboard (list of inmates)
+│   ├── inventory.js   # Inventory dashboard
+│   ├── laundry.js     # Laundry dashboard
+│   ├── release.js     # Release dashboard
+│   ├── settings.js    # Settings page (user and fee management)
+│   ├── inmate/        # Dynamic route directory for inmate details
+│   │   └── [id].js    # Dynamic page for individual inmate details
+│   └── inmates/       # Nested route directory for inmate-related actions
+│       └── add.js     # Page to add a new inmate
+├── components/        # Reusable components
+│   ├── Layout.js      # Common layout component (app bar, drawer, footer)
+│   └── ProtectedPage.js  # (Optional) Component to protect routes based on user role
+├── theme.js           # Material-UI theme configuration
+├── public/            # Static assets (images, fonts, etc.)
+│   └── (static files) # Placeholder for images, fonts, etc.
+├── package.json       # Project dependencies and scripts
+├── next.config.js     # Next.js configuration file
+└── jsconfig.json      # (Optional) JavaScript configuration for path aliases
